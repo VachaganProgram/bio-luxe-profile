@@ -1,0 +1,281 @@
+{
+  "product": {
+    "id": 1,
+    "lang": "en",
+    "category": {
+      "en": "for kids",
+      "ru": "для детей",
+      "am": "երեխաների համար"
+    },
+    "title": {
+      "en": "Cribe",
+      "ru": "Детская кроватка",
+      "am": "Մանկական մահճակալ"
+    },
+    "price": "400$",
+    "description": {
+      "en": "Comfortable and safe crib for your child, made from high-quality cotton.",
+      "ru": "Удобная и безопасная кроватка для вашего ребенка из высококачественного хлопка.",
+      "am": "Հարմարավետ և անվտանգ մանկական մահճակալ, պատրաստված բարձրորակ բամբակից։"
+    },
+    "productNumber": "000000400",
+    "material": {
+      "en": "cotton",
+      "ru": "хлопок",
+      "am": "բամբակ"
+    },
+    "weight": {
+      "en": "9 gr",
+      "ru": "9 гр",
+      "am": "9 գր"
+    },
+    "descriptionDetailsTitle": {
+      "en": "Description & Details",
+      "ru": "Описание и детали",
+      "am": "Նկարագրություն և մանրամասներ"
+    },
+    "productNumberLabel": {
+      "en": "Product number:",
+      "ru": "Артикул:",
+      "am": "Ապրանքի կոդը՝"
+    },
+    "materialLabel": {
+      "en": "Material:",
+      "ru": "Материал:",
+      "am": "Նյութը՝"
+    },
+    "weightLabel": {
+      "en": "Weight:",
+      "ru": "Вес:",
+      "am": "Քաշը՝"
+    },
+    "sizeLabel": {
+      "en": "Size",
+      "ru": "Размер",
+      "am": "Չափս"
+    },
+    "sizeGuideText": {
+      "en": "Size guide",
+      "ru": "Таблица размеров",
+      "am": "Չափսերի աղյուսակ"
+    },
+    "sizes": [
+      {
+        "value": "47",
+        "available": true
+      },
+      {
+        "value": "48",
+        "available": true
+      },
+      {
+        "value": "49",
+        "available": false
+      },
+      {
+        "value": "50",
+        "available": true
+      },
+      {
+        "value": "51",
+        "available": true
+      },
+      {
+        "value": "52",
+        "available": true
+      },
+      {
+        "value": "53",
+        "available": true
+      },
+      {
+        "value": "54",
+        "available": true
+      },
+      {
+        "value": "55",
+        "available": true
+      },
+      {
+        "value": "56",
+        "available": true
+      },
+      {
+        "value": "57",
+        "available": true
+      },
+      {
+        "value": "58",
+        "available": true
+      },
+      {
+        "value": "59",
+        "available": true
+      },
+      {
+        "value": "60",
+        "available": true
+      }
+    ],
+    "sizeGuideArrow": "images/drop_down_icon.png",
+    "deliveryInfo": {
+      "modalTitle": {
+        "en": "About delivery",
+        "ru": "О доставке",
+        "am": "Առաքման մասին"
+      },
+      "moreDeliveryInfoTitle": {
+        "en": "More Delivery Information",
+        "ru": "Подробнее о доставке",
+        "am": "Ավելին առաքման մասին"
+      },
+      "modalCloseIcon": "images/icon_X.png",
+      "deliveryLinkIcon": "images/info_icon.png",
+      "deliveryLinkText": {
+        "en": "about delivery",
+        "ru": "о доставке",
+        "am": "առաքման մասին"
+      },
+      "paragraph1": {
+        "en": "We deliver your orders safely and quickly within 3-5 working days.",
+        "ru": "Мы доставляем ваши заказы безопасно и быстро в течение 3-5 рабочих дней.",
+        "am": "Մենք ձեր պատվերները առաքում ենք անվտանգ և արագ՝ 3-5 աշխատանքային օրվա ընթացքում։"
+      },
+      "points1": [
+        {
+          "en": "Delivery costs vary depending on your region.",
+          "ru": "Стоимость доставки зависит от вашего региона.",
+          "am": "Առաքման արժեքը կախված է ձեր տարածաշրջանից։"
+        },
+        {
+          "en": "Free delivery for orders over $100.",
+          "ru": "Бесплатная доставка для заказов от 100 долларов.",
+          "am": "100 դոլարից բարձր պատվերների համար առաքումն անվճար է։"
+        },
+        {
+          "en": "Track your order online after shipment.",
+          "ru": "Отслеживайте ваш заказ онлайн после отправки.",
+          "am": "Առաքումից հետո կարող եք առցանց հետևել ձեր պատվերին։"
+        },
+        {
+          "en": "International shipping available.",
+          "ru": "Доступна международная доставка.",
+          "am": "Միջազգային առաքումն հասանելի է։"
+        }
+      ],
+      "paragraph2": {
+        "en": "Express options are available for faster delivery.",
+        "ru": "Для быстрой доставки доступны экспресс-опции.",
+        "am": "Արագ առաքման համար կան արագ տարբերակներ։"
+      },
+      "expressDelivery": {
+        "title": {
+          "en": "Express delivery",
+          "ru": "Экспресс-доставка",
+          "am": "Արագ առաքում"
+        },
+        "points": [
+          {
+            "en": "Delivered within 1-2 working days.",
+            "ru": "Доставка в течение 1-2 рабочих дней.",
+            "am": "Առաքում՝ 1-2 աշխատանքային օրվա ընթացքում։"
+          },
+          {
+            "en": "Additional fees apply.",
+            "ru": "Дополнительные сборы применяются.",
+            "am": "Լրացուցիչ վճար է կիրառվում։"
+          },
+          {
+            "en": "Available in selected cities only.",
+            "ru": "Доступно только в некоторых городах.",
+            "am": "Հասանելի է միայն որոշ քաղաքներում։"
+          },
+          {
+            "en": "Order before 2 PM for same-day processing.",
+            "ru": "Оформите заказ до 14:00 для обработки в тот же день.",
+            "am": "Պատվիրեք մինչև 14:00՝ նույն օրը մշակման համար։"
+          }
+        ]
+      },
+      "paragraph3": {
+        "en": "For special shipping requests, please contact our support.",
+        "ru": "Для специальных запросов по доставке свяжитесь с нашей поддержкой.",
+        "am": "Հատուկ առաքման հարցումների համար դիմեք մեր աջակցությանը։"
+      },
+      "points2": [
+        {
+          "en": "Gift packaging available on request.",
+          "ru": "Подарочная упаковка доступна по запросу.",
+          "am": "Նվերային փաթեթավորումը հասանելի է ըստ պահանջի։"
+        },
+        {
+          "en": "Weekend deliveries available in major cities.",
+          "ru": "Доставка по выходным доступна в крупных городах.",
+          "am": "Շաբաթօրյա առաքումն իրականացվում է խոշոր քաղաքներում։"
+        },
+        {
+          "en": "Option to reschedule delivery time.",
+          "ru": "Возможность перенести время доставки.",
+          "am": "Հնարավորություն կա փոխել առաքման ժամը։"
+        },
+        {
+          "en": "Signature required upon delivery.",
+          "ru": "Требуется подпись при доставке.",
+          "am": "Առաքման պահին անհրաժեշտ է ստորագրություն։"
+        }
+      ],
+      "paragraph4": {
+        "en": "We do our best to make delivery as fast and convenient as possible.",
+        "ru": "Мы делаем всё возможное, чтобы доставка была быстрой и удобной.",
+        "am": "Մենք ամեն ինչ անում ենք՝ ձեր առաքումը արագ և հարմարավետ դարձնելու համար։"
+      },
+      "additionalDelivery": {
+        "title": {
+          "en": "Additional delivery options",
+          "ru": "Дополнительные варианты доставки",
+          "am": "Առաքման լրացուցիչ տարբերակներ"
+        },
+        "points": [
+          {
+            "en": "Self-pickup points available.",
+            "ru": "Доступны пункты самовывоза.",
+            "am": "Հասանելի են ինքնաբեռնման կետեր։"
+          },
+          {
+            "en": "Courier service to your door.",
+            "ru": "Курьерская доставка до двери.",
+            "am": "Դուռ առ դուռ առաքում։"
+          },
+          {
+            "en": "Evening and weekend delivery slots.",
+            "ru": "Вечерние и выходные интервалы доставки.",
+            "am": "Երեկոյան և հանգստյան օրերի առաքում։"
+          },
+          {
+            "en": "SMS notification before delivery.",
+            "ru": "СМС-уведомление перед доставкой.",
+            "am": "Առաքումից առաջ SMS ծանուցում։"
+          }
+        ]
+      }
+    }
+  },
+  "cart": [
+    {
+      "id": "1",
+      "btn_text": {
+        "en": "ADD TO BAG",
+        "ru": "ДОБАВИТЬ В КОРЗИНУ",
+        "am": "Ավելացնել զամբյուղում"
+      },
+      "btn_url": "/"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "1",
+      "heart_image": "images/heart.png",
+      "isFavorited": false
+    }
+  ]
+}

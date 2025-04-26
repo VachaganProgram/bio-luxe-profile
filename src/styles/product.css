@@ -1,0 +1,355 @@
+body {
+  font-family: var(--font-family, Arial, sans-serif);
+  margin: 0;
+  padding: 20px;
+  background: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product-details {
+  max-width: 400px;
+  width: 100%;
+}
+
+.category {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.product-title {
+  font-family: var(--second-family, Arial, sans-serif);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.price {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.size-selector {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.size-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.size-guide-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.size-guide {
+  font-family: var(--font-family, Arial, sans-serif);
+  color: #666;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.size-guide:hover {
+  color: #000;
+}
+
+.size-guide-arrow {
+  width: 10px;
+  height: 10px;
+  transition: transform 0.3s ease;
+}
+
+.size-guide-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #999;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.dropdown-menu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  padding: 6px 12px;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dropdown-item:hover {
+  background: #f8f8f8;
+}
+
+.dropdown-item.selected {
+  background: #e8e8e8;
+  font-weight: 600;
+}
+
+.dropdown-item.disabled {
+  color: #999;
+  cursor: not-allowed;
+  background: #fff;
+}
+
+.section-title {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.description {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+
+.detail {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #333;
+}
+
+.delivery-info-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  font-family: var(--font-family, Arial, sans-serif);
+  color: #666;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.delivery-info-button:hover {
+  color: #000;
+}
+
+.delivery-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.add-to-bag {
+  flex: 1;
+  padding: 12px;
+  background: #e5e5e5;
+  color: #555;
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.add-to-bag:hover {
+  background: #d5d5d5;
+}
+
+.favorite-button {
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.heart-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  max-height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: scaleIn 0.7s ease forwards;
+}
+
+@keyframes scaleIn {
+  from { transform: translateY(-25px); opacity: 0; }
+  to { transform: translateY(25px); opacity: 1; }
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px 10px;
+}
+
+.modal-close:hover {
+  color: #666;
+}
+
+.modal-close-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-header {
+  padding: 12px 16px;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  margin: 0 auto;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-weight: 400;
+  font-size: 20px;
+  color: #131313;
+}
+
+.modal-body {
+  padding: 12px 16px;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 13px;
+  line-height: 1.4;
+  color: #555;
+  text-align: center;
+}
+
+.modal-paragraph {
+  margin-bottom: 12px;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  color: #8c8b8b;
+}
+
+.modal-sub-title {
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 14px;
+  font-weight: bold;
+  margin: 12px 0 8px;
+}
+
+.modal-list {
+  list-style-type: disc;
+  padding-left: 0;
+  margin: 0 auto 12px;
+  color: #666;
+  display: inline-block;
+  text-align: left;
+}
+
+.modal-list li {
+  margin-bottom: 2px;
+}
+
+.status {
+  text-align: center;
+  font-family: var(--font-family, Arial, sans-serif);
+  font-size: 16px;
+  color: #333;
+}
+
+.status.error {
+  color: red;
+}

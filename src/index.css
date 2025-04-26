@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: all 0.3s linear;
+}
+
+:root {
+  --bg_color: #51a5ad;
+  --text_color: #1e4051;
+  --font-family: "Inter", sans-serif;
+  --second-family: "Didact Gothic", sans-serif;
+  --third-family: "HelveticaNeueCyr", sans-serif;
+  --font3: "Satoshi", sans-serif;
+}
+.container{
+  max-width: 542px;
+  height: 532px;
+}
