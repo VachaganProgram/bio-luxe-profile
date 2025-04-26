@@ -1,9 +1,9 @@
-import { ProductPage } from "./components/Product";
+import { Popular_items as PopularItems } from './components/PopularItems'
 
-export  function App() {
+export function App() {
   return (
-    <div className="App">
-      <ProductPage/>
+    <div>
+      <PopularItems />
     </div>
   );
 }

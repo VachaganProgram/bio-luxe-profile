@@ -1,0 +1,328 @@
+#popular_items .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+}
+
+#popular_items .container .heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#popular_items .container .heading {
+  flex: 1;
+  text-align: left;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  color: #1e4051;
+}
+
+#popular_items .container .heading .line {
+  width: 100%;
+  height: 1px;
+  background: #d3e4e8;
+  margin-top: 0.5rem;
+}
+
+#popular_items .container .navigation-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+#popular_items .container .mySwiper {
+  margin-top: 20px;
+  position: relative;
+}
+
+#popular_items .container .box {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+#popular_items .container .box:hover {
+  transform: translateY(-5px);
+}
+
+#popular_items .container .box .heart_icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 10;
+  
+}
+#popular_items .container .box .heart_icon img .hover {
+  transform: scale(1.1);
+}
+#popular_items .container .box .heart_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#popular_items .container .box .content {
+  padding: 1rem;
+  text-align: center;
+}
+
+#popular_items .container .box .title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #1e4051;
+  margin: 0;
+}
+
+#popular_items .container .box .price {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #1e4051;
+  margin: 0.5rem 0;
+}
+
+#popular_items .container .box .btn_add_to_bag {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #50a2aa;
+  border: none;
+  padding: 10px 20px;
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  margin-right: -1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#popular_items .container .box .btn_add_to_bag:hover {
+  background: #2a5a73;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.swiper-slide .box > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  position: static;
+  margin: 0;
+  transform: none;
+  opacity: 1;
+  z-index: 10;
+}
+
+/* Override default Swiper arrow content */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none !important; /* Remove default Swiper arrows */
+}
+
+/* Style the custom arrow images */
+.swiper-button-next img,
+.swiper-button-prev img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed;
+}
+
+/* Hide unused box_container */
+#popular_items .container .box_container {
+  display: none;
+}
+
+
+/* Tablets and large mobiles (max-width: 768px) */
+@media (max-width: 768px) {
+  #popular_items .container {
+    padding: 0 10px;
+  }
+
+  #popular_items .container .heading-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #popular_items .container .heading {
+    font-size: 22px;
+  }
+
+  #popular_items .container .navigation-arrows {
+    align-self: flex-end;
+  }
+
+  #popular_items .container .box {
+    max-width: 200px;
+  }
+
+  #popular_items .container .box .content {
+    padding: 0.8rem;
+  }
+
+  #popular_items .container .box .title {
+    font-size: 13px;
+  }
+
+  #popular_items .container .box .price {
+    font-size: 13px;
+    margin: 0.4rem 0;
+  }
+
+  #popular_items .container .box .btn_add_to_bag {
+    font-size: 12px;
+    padding: 7px 14px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Small mobiles (max-width: 576px) */
+@media (max-width: 576px) {
+  #popular_items .container .heading {
+    font-size: 20px;
+  }
+
+  #popular_items .container .box {
+    max-width: 180px;
+  }
+
+  #popular_items .container .box .heart_icon {
+    width: 20px;
+    height: 20px;
+    right: 0.8rem;
+    top: 0.8rem;
+  }
+
+  #popular_items .container .box .title {
+    font-size: 12px;
+  }
+
+  #popular_items .container .box .price {
+    font-size: 12px;
+  }
+
+  #popular_items .container .box .btn_add_to_bag {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 28px;
+    height: 28px;
+  }
+
+  #popular_items .container .mySwiper {
+    margin-top: 15px;
+  }
+}
+
+/* Extra small mobiles (max-width: 360px) */
+@media (max-width: 360px) {
+  #popular_items .container {
+    padding: 0 8px;
+  }
+
+  #popular_items .container .heading {
+    font-size: 18px;
+  }
+
+  #popular_items .container .heading-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  #popular_items .container .box {
+    max-width: 160px;
+  }
+
+  #popular_items .container .box .content {
+    padding: 0.6rem;
+  }
+
+  #popular_items .container .box .heart_icon {
+    width: 18px;
+    height: 18px;
+    right: 0.6rem;
+    top: 0.6rem;
+  }
+
+  #popular_items .container .box .title {
+    font-size: 11px;
+    line-height: 110%;
+  }
+
+  #popular_items .container .box .price {
+    font-size: 11px;
+    margin: 0.3rem 0;
+  }
+
+  #popular_items .container .box .btn_add_to_bag {
+    font-size: 10px;
+    padding: 5px 10px;
+    width: calc(100% + 1.2rem);
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 24px;
+    height: 24px;
+  }
+
+  #popular_items .container .navigation-arrows {
+    gap: 8px;
+  }
+
+  #popular_items .container .mySwiper {
+    margin-top: 12px;
+  }
+}
