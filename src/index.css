@@ -1,6 +1,3 @@
-@import "./styles/popular_items.css";
-
-
 * {
   margin: 0;
   padding: 0;
@@ -19,41 +16,11 @@
   --third-family: "HelveticaNeueCyr", sans-serif;
   --font3: "Satoshi", sans-serif;
 }
-
-.container {
+.container{
+  width: 100%;
+  height: 100vh;
+}
+.row{
   max-width: 1312px;
-  margin: auto;
-}
-
-.heading {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 112%;
-  color: var(--text_color);
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.heading .line {
-  width: 100%;
-  height: 2px;
-  background: var(--text_color);
-}
-
-.btn_add_to_bag{
-  display: block;
-  text-align: center;
-  border-radius: 4px;
-  padding: 12px 24px;
-  width: 100%;
-  height: 45px;
-  background: #50a2aa;
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 130%;
-  text-transform: uppercase;
-  color: #fff;
+  margin: 0 auto;
 }

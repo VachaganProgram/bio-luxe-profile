@@ -1,9 +1,9 @@
-import { Popular_items as PopularItems } from './components/PopularItems'
+import { CribeSlider } from "./components/cribeSlider";
 
 export function App() {
   return (
-    <div>
-      <PopularItems />
+    <div className="App">
+      <CribeSlider/>
     </div>
   );
 }
